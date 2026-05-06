@@ -1,0 +1,29 @@
+# CS Students Data Analysis
+
+This is a beginner-friendly data analysis project based on `pandas`.  
+The project analyzes a student dataset and covers the basic workflow of data loading, data checking, data cleaning, feature engineering, and statistical analysis.
+
+## Project Goals
+
+The main goals of this project are to practice:
+
+- Reading CSV files with pandas
+- Checking basic dataset information
+- Cleaning duplicated records and invalid values
+- Standardizing column names and text fields
+- Creating new features from existing columns
+- Performing basic statistical analysis
+- Organizing a small data analysis project for GitHub
+
+## Project Structure
+
+```text
+cs-students-analysis/
+│
+├── main.py              # Main Python script
+├── cs_students.csv      # Raw dataset
+├── README.md            # Project documentation
+├── .gitignore           # Git ignored files
+│
+├── outputs/             # Output files
+└── figures/             # Generated figures
