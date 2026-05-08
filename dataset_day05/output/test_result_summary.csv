@@ -1,0 +1,19 @@
+Medical Condition,Test Results,Patient_Count
+Arthritis,Abnormal,3156
+Arthritis,Inconclusive,3062
+Arthritis,Normal,3000
+Asthma,Abnormal,2980
+Asthma,Inconclusive,2999
+Asthma,Normal,3116
+Cancer,Abnormal,3089
+Cancer,Inconclusive,3033
+Cancer,Normal,3018
+Diabetes,Abnormal,3131
+Diabetes,Inconclusive,3024
+Diabetes,Normal,3061
+Hypertension,Abnormal,2977
+Hypertension,Inconclusive,3068
+Hypertension,Normal,3106
+Obesity,Abnormal,3104
+Obesity,Inconclusive,3012
+Obesity,Normal,3030
