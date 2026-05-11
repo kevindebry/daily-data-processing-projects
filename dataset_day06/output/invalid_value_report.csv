@@ -1,0 +1,9 @@
+﻿column,invalid_value_count,missing_before_fill
+temperature_(c),0,0
+apparent_temperature_(c),0,0
+humidity,0,0
+wind_speed_(km/h),0,0
+wind_bearing_(degrees),0,0
+visibility_(km),0,0
+loud_cover,0,0
+pressure_(millibars),1288,1288

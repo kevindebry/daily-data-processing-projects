@@ -1,0 +1,100 @@
+数据基础认知报告
+========================================
+前5行：
+                  Formatted Date        Summary Precip Type  Temperature (C)  Apparent Temperature (C)  Humidity  Wind Speed (km/h)  Wind Bearing (degrees)  Visibility (km)  Loud Cover  Pressure (millibars)                      Daily Summary
+0  2006-04-01 00:00:00.000 +0200  Partly Cloudy        rain         9.472222                  7.388889      0.89            14.1197                   251.0          15.8263         0.0               1015.13  Partly cloudy throughout the day.
+1  2006-04-01 01:00:00.000 +0200  Partly Cloudy        rain         9.355556                  7.227778      0.86            14.2646                   259.0          15.8263         0.0               1015.63  Partly cloudy throughout the day.
+2  2006-04-01 02:00:00.000 +0200  Mostly Cloudy        rain         9.377778                  9.377778      0.89             3.9284                   204.0          14.9569         0.0               1015.94  Partly cloudy throughout the day.
+3  2006-04-01 03:00:00.000 +0200  Partly Cloudy        rain         8.288889                  5.944444      0.83            14.1036                   269.0          15.8263         0.0               1016.41  Partly cloudy throughout the day.
+4  2006-04-01 04:00:00.000 +0200  Mostly Cloudy        rain         8.755556                  6.977778      0.83            11.0446                   259.0          15.8263         0.0               1016.51  Partly cloudy throughout the day.
+
+数据规模：96453 行，12 列
+
+字段类型：
+Formatted Date                  str
+Summary                         str
+Precip Type                     str
+Temperature (C)             float64
+Apparent Temperature (C)    float64
+Humidity                    float64
+Wind Speed (km/h)           float64
+Wind Bearing (degrees)      float64
+Visibility (km)             float64
+Loud Cover                  float64
+Pressure (millibars)        float64
+Daily Summary                   str
+
+重复行数量：24
+
+缺失值统计：
+Formatted Date                0
+Summary                       0
+Precip Type                 517
+Temperature (C)               0
+Apparent Temperature (C)      0
+Humidity                      0
+Wind Speed (km/h)             0
+Wind Bearing (degrees)        0
+Visibility (km)               0
+Loud Cover                    0
+Pressure (millibars)          0
+Daily Summary                 0
+
+字段信息：
+<class 'pandas.DataFrame'>
+RangeIndex: 96453 entries, 0 to 96452
+Data columns (total 12 columns):
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   Formatted Date            96453 non-null  str    
+ 1   Summary                   96453 non-null  str    
+ 2   Precip Type               95936 non-null  str    
+ 3   Temperature (C)           96453 non-null  float64
+ 4   Apparent Temperature (C)  96453 non-null  float64
+ 5   Humidity                  96453 non-null  float64
+ 6   Wind Speed (km/h)         96453 non-null  float64
+ 7   Wind Bearing (degrees)    96453 non-null  float64
+ 8   Visibility (km)           96453 non-null  float64
+ 9   Loud Cover                96453 non-null  float64
+ 10  Pressure (millibars)      96453 non-null  float64
+ 11  Daily Summary             96453 non-null  str    
+dtypes: float64(8), str(4)
+memory usage: 8.8 MB
+
+
+数值字段描述统计：
+       Temperature (C)  Apparent Temperature (C)      Humidity  Wind Speed (km/h)  Wind Bearing (degrees)  Visibility (km)  Loud Cover  Pressure (millibars)
+count     96453.000000              96453.000000  96453.000000       96453.000000            96453.000000     96453.000000     96453.0          96453.000000
+mean         11.932678                 10.855029      0.734899          10.810640              187.509232        10.347325         0.0           1003.235956
+std           9.551546                 10.696847      0.195473           6.913571              107.383428         4.192123         0.0            116.969906
+min         -21.822222                -27.716667      0.000000           0.000000                0.000000         0.000000         0.0              0.000000
+25%           4.688889                  2.311111      0.600000           5.828200              116.000000         8.339800         0.0           1011.900000
+50%          12.000000                 12.000000      0.780000           9.965900              180.000000        10.046400         0.0           1016.450000
+75%          18.838889                 18.838889      0.890000          14.135800              290.000000        14.812000         0.0           1021.090000
+max          39.905556                 39.344444      1.000000          63.852600              359.000000        16.100000         0.0           1046.380000
+
+字符字段描述统计：
+
+[Formatted Date]
+count                             96453
+unique                            96429
+top       2010-08-02 00:00:00.000 +0200
+freq                                  2
+
+[Summary]
+count             96453
+unique               27
+top       Partly Cloudy
+freq              31733
+
+[Precip Type]
+count     95936
+unique        2
+top        rain
+freq      85224
+
+[Daily Summary]
+count                                 96453
+unique                                  214
+top       Mostly cloudy throughout the day.
+freq                                  20085
